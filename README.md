@@ -6,7 +6,7 @@
 **Curso:** Aplicaciones Móviles - Semana 10  
 
 <div align="center">
-  <img src="screenshots2/app_banner.jpg" width="200" alt="Banner de la aplicación">
+  <img src="screenshots2/imagen1.jpg" width="200" alt="Banner de la aplicación">
 </div>
 
 ## 🔍 ¿Cómo funciona la aplicación?
