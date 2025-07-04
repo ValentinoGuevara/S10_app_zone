@@ -112,42 +112,7 @@
     }
   }
 }
-Estructura del Proyecto
-bash
-Copiar
-Editar
-app_s10/
-├── app/
-│   ├── src/main/
-│   │   ├── java/com/example/app_s10/
-│   │   │   ├── LoginActivity.kt      # Pantalla de login
-│   │   │   ├── MainActivity.kt       # Dashboard principal
-│   │   │   ├── AddGameActivity.kt    # Registrar juego
-│   │   │   └── GameListActivity.kt   # Lista de juegos
-│   │   ├── res/
-│   │   │   ├── layout/
-│   │   │   │   ├── activity_login.xml    # UI Login
-│   │   │   │   ├── activity_main.xml     # UI Dashboard
-│   │   │   │   └── activity_add_game.xml # UI Añadir Juego
-│   │   │   ├── values/
-│   │   │   │   ├── colors.xml        # Colores
-│   │   │   │   └── strings.xml       # Textos
-│   │   │   └── drawable/             # Iconos y fondos
-│   │   └── AndroidManifest.xml       # Configuración app
-│   ├── google-services.json          # Configuración Firebase
-│   └── build.gradle.kts              # Dependencias
-└── README.md                         # Este archivo
-🛠️ Configuración e Instalación
-1️⃣ Fork y Clonación del Proyecto
-Haz un fork del repositorio.
-
-Clona el repositorio a tu máquina:
-
-bash
-Copiar
-Editar
-git clone https://github.com/TU_USUARIO/app_s10.git
-cd app_s10
+```
 2️⃣ Configuración de Firebase
 Ve a Firebase Console y crea un proyecto llamado GameVault.
 
