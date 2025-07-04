@@ -156,4 +156,4 @@ implementation("com.google.firebase:firebase-database:20.3.0")
 Prohibido el uso comercial sin autorización expresa.
 
 
-<div align="center"> <img src="screenshots2/app_demo.gif" width="300" alt="Demo animada"> <p>¡Explora el código y contribuye!</p> <a href="https://github.com/ValentinoGuevara/S9_SharedPreferences"> <img src="https://img.shields.io/badge/VER_EN_GITHUB-181717?style=for-the-badge&logo=github"> </a> </div> ```
+<div align="center"> <img src="screenshots2/app_demo.gif" width="300" alt="Demo animada"> <p>¡Explora el código y contribuye!</p> <a href="https://github.com/ValentinoGuevara/S10_app_zone.git"> <img src="https://img.shields.io/badge/VER_EN_GITHUB-181717?style=for-the-badge&logo=github"> </a> </div> ```
