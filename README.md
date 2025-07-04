@@ -126,31 +126,34 @@ En el archivo `app/build.gradle.kts`, agrega la dependencia de **Firebase Realti
 ```kotlin
 implementation("com.google.firebase:firebase-database:20.3.0")
 ```
-4️⃣ Ejecutar la Aplicación
-Abre el proyecto en Android Studio y espera a que Gradle se sincronice.
+#### 4️⃣ **Ejecutar la Aplicación**
+1. Abre el proyecto en **Android Studio** y espera a que **Gradle** se sincronice.
+2. Ejecuta la app en tu dispositivo o emulador haciendo clic en el botón **Run ▶️**.
 
-Ejecuta la app en tu dispositivo o emulador haciendo clic en el botón Run ▶️.
+---
 
-🎮 Cómo Usar la App
-Primera vez: Regístrate con tu correo electrónico y contraseña.
+## 🎮 **Cómo Usar la App**
 
-Login: Ingresa tus credenciales para acceder al dashboard.
+1. **Primera vez**: Regístrate con tu correo electrónico y contraseña.
+2. **Login**: Ingresa tus credenciales para acceder al **dashboard**.
+3. **Modo Invitado**: Haz clic en "Continuar como invitado" para usar la app sin registrarte.
+4. **Añadir Juegos**: Registra juegos con detalles como **título**, **género**, **plataforma** y **rating**.
+5. **Visualizar Juegos**: Visualiza todos los juegos registrados y filtra por **género** o **rating**.
 
-Modo Invitado: Haz clic en "Continuar como invitado" para usar la app sin registrarte.
+---
 
-Añadir Juegos: Registra juegos con detalles como título, género, plataforma y rating.
+## 🌟 **Avances Futuros**
 
-Visualizar Juegos: Visualiza todos los juegos registrados y filtra por género o rating.
+- **Edición de juegos**: Permitir que los usuarios editen los juegos existentes.
+- **Eliminación de juegos**: Implementar un sistema para eliminar juegos con confirmación.
+- **Búsqueda avanzada**: Mejorar la búsqueda con múltiples filtros por **género**, **título** y **rating**.
 
-🌟 Avances Fututos
-Edición de juegos: Permitir que los usuarios editen los juegos existentes.
+---
 
-Eliminación de juegos: Implementar un sistema para eliminar juegos con confirmación.
+## 📚 **Licencia**
 
-Búsqueda avanzada: Mejorar la búsqueda con múltiples filtros por género, título y rating.
-
-📚 Licencia
-Copyright © 2025 - Valentino Guevara
+**Copyright © 2025 - Valentino Guevara**  
 Prohibido el uso comercial sin autorización expresa.
+
 
 <div align="center"> <img src="screenshots2/app_demo.gif" width="300" alt="Demo animada"> <p>¡Explora el código y contribuye!</p> <a href="https://github.com/ValentinoGuevara/S9_SharedPreferences"> <img src="https://img.shields.io/badge/VER_EN_GITHUB-181717?style=for-the-badge&logo=github"> </a> </div> ```
