@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/gaming_bg_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Encabezado con estilo gaming -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ NUEVO JUEGO ✨"
+                android:textSize="26sp"
+                android:textColor="@color/gaming_cyan"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registra tus juegos favoritos"
+                android:textSize="14sp"
+                android:textColor="@color/gaming_text_secondary"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Contenedor del formulario con efecto neón -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/gaming_purple"
+            app:strokeWidth="2dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Rating con diseño gaming innovador -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿CUÁNTO TE GUSTÓ?"
+                        android:textSize="12sp"
+                        android:textColor="@color/gaming_cyan"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="8dp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@android:style/Widget.RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="1"
+                        android:secondaryProgressTint="@color/gaming_cyan"/>
+
+                    <TextView
+                        android:id="@+id/tvRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/5 ESTRELLAS"
+                        android:textSize="12sp"
+                        android:textColor="@color/gaming_text_secondary"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- Campo Género ORIGINAL -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Género"
+                    android:layout_marginBottom="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGameGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gaming_bg_secondary"
+                    android:textColor="@color/gaming_text_primary"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Campo Título ORIGINAL -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Título del juego"
+                    android:layout_marginBottom="24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGameTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gaming_bg_secondary"
+                    android:textColor="@color/gaming_text_primary"
+                    android:imeOptions="actionSearch"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Botón con efecto gaming espectacular -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaveGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:text="🚀 GUARDAR JUEGO"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    app:iconTint="@android:color/white"
+                    app:backgroundTint="@color/gaming_purple"
+                    app:cornerRadius="12dp"
+                    app:rippleColor="@color/gaming_cyan"
+                    app:elevation="8dp"
+                    android:layout_marginTop="8dp"
+                    android:stateListAnimator="@null"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Nota al pie con estilo minimalista -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2023 Gaming App | Todos los derechos reservados"
+            android:textSize="10sp"
+            android:textColor="@color/gaming_text_secondary"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

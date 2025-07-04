@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/gaming_bg_primary"
+    tools:context=".GamesListActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis Juegos Añadidos"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/gaming_purple"
+        android:letterSpacing="0.03"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:layout_marginBottom="32dp"
+        android:paddingStart="4dp"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:strokeColor="@color/gaming_purple"
+        app:strokeWidth="2dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/gaming_bg_primary"
+            app:boxStrokeColor="@color/gaming_purple"
+            app:hintTextColor="@color/gaming_purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Buscar Juegos por su título"
+                android:textColor="@color/gaming_text_primary"
+                android:textColorHint="@color/gaming_purple"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupGenres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:paddingVertical="6dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todos"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/gaming_pink"
+                app:checkedIconVisible="true"
+                app:checkedIcon="@drawable/ic_check_circle"
+                app:checkedIconTint="@color/white"
+                app:chipStrokeColor="@color/gaming_purple"
+                app:chipStrokeWidth="1.5dp"
+                android:layout_marginEnd="12dp"
+                app:chipCornerRadius="20dp"
+                android:layout_marginStart="8dp"/>
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGamesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_game"/>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp"
+    app:strokeColor="@color/gaming_purple"
+    app:strokeWidth="1.5dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvGameTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Título del Juego"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/gaming_purple"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
+
+            <ImageButton
+                android:id="@+id/btnOptions"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_more_vert"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Opciones" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvGameGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Género"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_genre_chip"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center" />
+
+        <RatingBar
+            android:id="@+id/ratingBarItem"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:progressTint="#FFD700"
+            android:secondaryProgressTint="#FFD700"
+            android:backgroundTint="@color/gaming_text_secondary"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="3" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

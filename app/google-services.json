@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135474968360",
+    "project_id": "gamerapp-4f3b2",
+    "storage_bucket": "gamerapp-4f3b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135474968360:android:ebf4190de60119970d821d",
+        "android_client_info": {
+          "package_name": "com.example.app_s10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfWGexTWefZfokxEdcOM_KvnbdTsy834k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
