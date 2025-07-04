@@ -113,29 +113,24 @@
   }
 }
 ```
-2️⃣ Configuración de Firebase
-Ve a Firebase Console y crea un proyecto llamado GameVault.
+## 🛠️ **Configuración e Instalación**
 
-Configura la autenticación con correo y habilita el acceso anónimo.
+#### 2️⃣ **Configuración de Firebase**
+1. Ve a **Firebase Console** y crea un proyecto llamado **GameVault**.
+2. Configura la autenticación con **correo electrónico** y habilita el acceso **anónimo**.
+3. Agrega tu aplicación Android a Firebase, descarga el archivo `google-services.json` y reemplázalo en el directorio `app`.
 
-Agrega tu aplicación Android a Firebase, descarga el archivo google-services.json y reemplázalo en el directorio app.
+#### 3️⃣ **Instalación de Dependencias**
+En el archivo `app/build.gradle.kts`, agrega la dependencia de **Firebase Realtime Database**:
 
-3️⃣ Instalación de Dependencias
-En el archivo app/build.gradle.kts, agrega la dependencia de Firebase Realtime Database:
-
-kotlin
-Copiar
-Editar
+```kotlin
 implementation("com.google.firebase:firebase-database:20.3.0")
+```
 4️⃣ Ejecutar la Aplicación
 Abre el proyecto en Android Studio y espera a que Gradle se sincronice.
 
-Ejecuta la app en tu dispositivo o emulador:
+Ejecuta la app en tu dispositivo o emulador haciendo clic en el botón Run ▶️.
 
-bash
-Copiar
-Editar
-Run ▶️
 🎮 Cómo Usar la App
 Primera vez: Regístrate con tu correo electrónico y contraseña.
 
